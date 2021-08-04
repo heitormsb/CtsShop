@@ -1,0 +1,12 @@
+{
+  "name": "clothes-shop",
+  "version": "1.0.0",
+  "description": "My firt projet for learn front/back end",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Heitor Msb",
+  "license": "ISC"
+}
