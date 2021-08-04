@@ -1,0 +1,467 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: cheque;
+  src: url(fonts/Mont-Heavy.otf);
+}
+
+@font-face {
+  font-family: chequeRegular;
+  src: url(fonts/Mont-Regular.otf);
+}
+
+.headerUpContainer{
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  height: 480px;
+  background-image: url(https://www.pixel4k.com/wp-content/uploads/2020/12/lava-abstract-formation-4k_1608578309-2048x1152.jpg);
+}
+
+.logoHeader{
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 35px;
+  filter: opacity(90%);
+}
+
+.containerLogo{
+  height: 0px;
+}
+
+.buttonHeader{
+  margin-left: auto;
+  margin-top: 20px;
+  /* margin-right: 20px; */
+  text-decoration: none;
+  list-style-type: none; 
+  width: 200px;
+}
+
+.a{
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 80px;
+  background-color: rgb(185, 160, 160);
+}
+
+.middleHeader{
+  display: flex;
+  flex-direction: column;
+  margin-top: -500px;
+  align-items: center;
+
+}
+
+.titleHeader{
+  margin-top: 190px;
+  margin-bottom: 160px;
+  font-size:70px;
+  font-family: cheque;
+  font-weight: bold;
+  color: #9547a8;
+}
+
+@media(max-width: 450px) {
+  .titleHeader{
+    margin-top: 220px;
+    font-size:50px;
+  }
+}
+
+.titleHeader:before{
+  content: 'INOVAÇÃO';
+  background-image: url(https://wallpapercave.com/wp/wp7505888.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  /* white-space: nowrap; */
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.titleHeader:hover:before{
+  /* width: 34.8%; */
+  width: 100%;
+}
+
+.downButton{
+  background-color: transparent;
+  border-radius: 90%;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: rotate(90deg);
+  filter: brightness(200%) opacity(60%) ;
+}
+
+.downButtomH{
+  height: 50px;
+  width: 50px;
+}
+
+.hamburgerHeader{
+  border: none;
+  background:transparent;
+  cursor: pointer;
+  filter: invert(1) opacity(40%);
+  /* background:url(https://cdn.icon-icons.com/icons2/2596/PNG/512/hamburger_button_menu_icon_155296.png) no-repeat;  */
+}
+
+.hamburgerImage{
+  width: 30px;
+  height: 30px;
+  /* filter:brightness(200%); */
+}
+
+.searchHeader{
+  background:transparent;
+  border:none;
+  cursor: pointer;
+  margin-right: 10px;
+  filter: invert(1) opacity(40%);
+}
+
+.searchHeaderImage{
+  width: 30px;
+  height: 30px;
+}
+
+
+.sanduicheBar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #12121242;
+  list-style-type: none;
+  border: 0;
+  height: 417px;
+  width: 200px;
+  transition: 0s;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.sanduicheBar.active{
+  opacity: 100;
+  max-height: 100%;
+  transition: 0.5s;
+  /* transform: translateX(0); */
+}
+
+.ll{
+  background: transparent;
+  border: none;
+  height: 100px;
+  width: 200px;
+  cursor: pointer;
+  font-family: chequeRegular;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+
+.buttonHeaderIcons{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+
+.searchCointainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #1212123a;
+  border-radius: 10px;
+  margin-top: 30px;
+  height: 90px;
+  width: 520px;
+  transition: 0s;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.searchCointainer.active{
+  opacity: 100;
+  max-height: 100%;
+  transition: 0.5s;
+}
+
+.inputSearch{
+  border: none;
+  outline: none;
+  /* margin-top: 40px; */
+  width: 400px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: chequeRegular;
+}
+
+.bus{
+  height: 30px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: chequeRegular;
+}
+
+.searchImageI {
+  filter: invert(1);
+  width: 30px;
+  height: 30px;
+}
+
+/* Main */
+
+.mainHeader{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  padding: 40px;
+  border-top: 1px outset black;
+  border-bottom: 1px outset black;
+  margin: 20px;
+  padding: 15px;
+  margin-bottom: 60px;
+}
+
+.ordenar{
+  margin-left: auto;
+}
+
+.mainHeaderButtom{
+  display: flex;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  align-items: center;
+  font-family: chequeRegular;
+  margin-right: 20px;
+}
+
+.downArrow{
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.downButton.active{ 
+  transform: rotate(-90deg);
+}
+
+.acordionContent{
+  overflow: hidden;
+  max-height: 0;
+}
+
+.acordionContent.active{
+  max-height: 100%;
+}
+
+.catalogoRoupas{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box1Image {
+  margin-right: 50px;
+  margin-left: 50px;
+  /* margin-top: 60px; */
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.precoR{
+  font-family: cheque;
+  color: #ffffff;
+  text-shadow: #494949 0px 0px 2px;
+  margin-bottom: 5px;
+}
+
+.boxRoupa{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.imageOverlay{
+  position: relative;
+  left: 10px;
+  bottom: 25px;
+  overflow: hidden;
+  transform:translateY(-50%) ;
+  opacity: 0;
+}
+
+.box1Image:hover .imageOverlay{
+  transform: translateY(0);
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.sizeClothes{
+  display: flex;
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.sizeClothes:hover{
+  transition: 0.5s;
+  filter: blur(2px);
+}
+
+.DescricaoR{
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  font-family: chequeRegular;
+  width: 200px;
+}
+
+.sizeHrefCat{
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+}
+
+.categoriaHover{
+  position: absolute;
+  list-style-type: none;
+  font-size: 12px;
+  margin-top: 16px;
+  padding: 10px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.categoria.active .categoriaHover{
+  max-height: 100%;
+  background: #ffffff;
+  outline: 1px solid #686868;
+  border: black;
+}
+
+
+.categoriaHover li{
+  margin-left: -10px;
+}
+
+.categoriaHover li button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 1px outset black;
+  border-radius: 3px;
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+  font-family: chequeRegular;
+}
+
+.tamanhoHover{
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  width: 180px;
+  height: 50px;
+  list-style-type: none;
+  font-size: 12px;
+  margin-top: 16px;
+  padding: 10px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.tamanho.active .tamanhoHover{
+  max-height: 100%;
+  background: #ffffff;
+  outline: 1px solid #686868;
+  border: black;
+}
+
+
+.tamanhoHover button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  /* margin-left: -10px; */
+  border: 1px outset black;
+  border-radius: 3px;
+  /* margin-left: 10px; */
+  margin-top: 10px;
+}
+
+.ordenarHover{
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-size: 12px;
+  margin-top: 16px;
+  padding: 10px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.ordenar.active .ordenarHover{
+  flex-direction: column;
+  max-height: 100%;
+  background: #ffffff;
+  outline: 1px solid #686868;
+  border: black;
+}
+
+.ordenarHover button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  /* margin-left: -10px; */
+  border: 1px outset black;
+  border-radius: 3px;
+  /* margin-left: 10px; */
+  margin-top: 10px;
+}
+
+.bgBlack:hover{
+  background: black; 
+}
+
+.clWhite{
+  text-decoration: none;
+  color: black;
+}
+
+.bgBlack:hover .clWhite{
+  /* background: black;  */
+  color: white;
+}
