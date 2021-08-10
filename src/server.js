@@ -1,10 +1,11 @@
 const express = require("express")
-const basicRoutes = require("./src/routes/basicRoutes.js")
-const adminRoutes = require("./src/routes/adminRoutes")
+const basicRoutes = require("./routes/basicRoutes.js")
+const adminRoutes = require("./routes/adminRoutes")
 const app = express()
 
 const path = require("path") // ter pasta public
 app.use(express.static(path.join(__dirname, 'public')))
+app.set("view engine","pug") // passar variavel para html
 
 const PORT = 8081
 
