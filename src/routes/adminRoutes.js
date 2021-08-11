@@ -4,7 +4,7 @@ const adminControllers = require('../controllers/adminControllers')
 
 
 router.get('/login', adminControllers.adminLogin)
-router.get("/dashboard", adminControllers.dashboard)
+router.get('/dashboard', adminControllers.dashboard)
 
 
 module.exports = router
