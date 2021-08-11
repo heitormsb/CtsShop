@@ -1,14 +1,14 @@
 const path = require('path') 
 
-const loginPage = (req,res) => {
-  res.render("login")
-}
 
 const dashboard = (req,res) => {
   res.sendFile(path.join(__dirname, "../views/index.html"))
 }
-
+ 
+const adminLogin = (req,res) => {
+  res.render("login")
+}
 module.exports = {
-  loginPage,
+  adminLogin,
   dashboard,
 }
