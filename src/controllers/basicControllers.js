@@ -5,7 +5,7 @@ const homePage = (req,res) => {
 }
 
 const userLogin = (req,res) => {
-  res.render("login")
+  res.sendFile(path.join(__dirname, "../views/login.html"))
 }
 
 module.exports = {
